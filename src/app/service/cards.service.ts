@@ -7,7 +7,7 @@ import { Card } from '../models/card.model';
   providedIn: 'root'
 })
 export class CardsService {
-
+  //baseURL
   baseUrl = 'https://localhost:7147/api/cards';
 
   constructor(private httpClient: HttpClient) { }
