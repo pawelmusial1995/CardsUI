@@ -20,4 +20,13 @@ export class CardsService {
     card.id = '00000000-0000-0000-0000-000000000000';
     return this.httpClient.post<Card>(this.baseUrl, card);
   }
+  deleteCard(id: string): Observable<Card>
+  {
+    return this.httpClient.delete<Card>(this.baseUrl + '/' + id);
+  }
+
+  updateCard(card: Card) : Observable<Card>
+  {
+    return this.httpClient.put<Card>(this.baseUrl + '/' + card.id, card);
+  }
 }
