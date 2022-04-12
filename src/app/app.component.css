@@ -1,4 +1,14 @@
-.container {
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+mat-sidenav {
+    width: 250px;
+}
+main {
+    padding: 10px;
+}
+
+/* .container {
     padding: 3em;
     max-width: 1000px;
     margin: 0 auto;
@@ -92,3 +102,18 @@ form button {
     background-color: #EF5350;
     color: white;
 }
+
+/* .container {
+    height: 700px;
+    position: relative;
+    margin-top: 5em;
+    border: 3px solid green;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } */ 

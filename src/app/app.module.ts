@@ -9,13 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HeaderComponent } from './components/navigation/header/header.component';
+import { SidenavListComponent } from './components/navigation/sidenav-list/sidenav-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent,
+    HeaderComponent,
+    SidenavListComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FormsModule,
     AngularMaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,FormsModule, ReactiveFormsModule
+    FlexLayoutModule,FormsModule, ReactiveFormsModule,
 
   ],
   providers: [],
